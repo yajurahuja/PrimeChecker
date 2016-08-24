@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Welcome">
+
+        <activity android:name=".Welcome" android:configChanges="orientation|screenSize|keyboardHidden" android:label="MathTrivia!">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,7 +17,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:configChanges="orientation|screenSize|keyboardHidden" android:label="Prime Checker">
+        </activity>
+
+        <activity android:name=".Hint" android:configChanges="orientation|screenSize|keyboardHidden" android:label="Hints !!">
+        </activity>
+
+        <activity android:name=".Cheat" android:configChanges="orientation|screenSize|keyboardHidden" android:label="Correct Answer !!">
         </activity>
 
     </application>

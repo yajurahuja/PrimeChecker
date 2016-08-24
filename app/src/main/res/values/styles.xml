@@ -17,4 +17,13 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Yes" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/cyan_A700</item>
+        <item name="colorButtonNormal">@color/cyan_A400</item>
+    </style>
+
+    <style name="Skip" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/grey_500</item>
+        <item name="colorButtonNormal">@color/blue_grey_200</item>
+    </style>
 </resources>
