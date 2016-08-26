@@ -27,19 +27,20 @@ public class MainActivity extends AppCompatActivity {
     private int disp;
     private int quiz;
     private int qs=0;
-    private int h1 = 0;
+    private int h1;
     private int a2 = 0;
     private String okay;
     private String n1;
+    private String SCORE;
+    private String NUMBER;
+    private String CHEATBOOL;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-            Intent intent = getIntent();
-            quiz = intent.getIntExtra("score",0);
+
 //        disp= getIntent().getStringExtra("cheat");
 //        quiz= getIntent().getStringExtra("score");
 //        qs = Integer.parseInt(quiz);
@@ -48,13 +49,34 @@ public class MainActivity extends AppCompatActivity {
         warning = (TextView)findViewById(R.id.warning);
         score = (TextView)findViewById(R.id.score);
 
-        Random rand = new Random();
-        num = rand.nextInt((1000 - 2) + 1) + 2;
+        if( savedInstanceState != null ) {
+            num = savedInstanceState.getInt(NUMBER);
+            h1 = savedInstanceState.getInt(CHEATBOOL);
+            quiz = savedInstanceState.getInt(SCORE);
+            number.setText(Integer.toString(num));
+            String fscore = "Score: " + quiz;
+            if(h1==0){
+                warning.setText("");
+            }else if(h1==1){
+                warning.setText("Hint Given");
+            }else{
+                warning.setText("Answer Given");
+            }
 
-        s = Integer.toString(num);
-        number.setText(s);
-        String fscore = "Score: " + quiz;
-        score.setText(fscore);
+        }
+        else {
+            Intent intent = getIntent();
+            quiz = intent.getIntExtra("score",0);
+            Random rand = new Random();
+            num = rand.nextInt((1000 - 2) + 1) + 2;
+            s = Integer.toString(num);
+            number.setText(s);
+            String fscore = "Score: " + quiz;
+            score.setText(fscore);
+            h1 = 0;
+            warning.setText("");
+        }
+
         question.setText("Is this a Prime Number?");
         check = 1;
         int temp;
@@ -139,10 +161,11 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                h1 = 1;
-                if(a2==0)
+
+                if(h1==0)
                 {
                     warning.setText("Hint Given");
+                    h1 = 1;
                 }
                 Intent intent = new Intent(MainActivity.this, Hint.class);
                 startActivity(intent);
@@ -153,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                a2 = 1;
+                h1 = 5;
                 warning.setText("Answer Given");
                 Intent intent = new Intent(MainActivity.this, Cheat.class);
 //                n1 = Integer.toString(num);
@@ -161,5 +184,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt(NUMBER, num);
+        savedInstanceState.putInt(SCORE, quiz);
+        savedInstanceState.putInt(CHEATBOOL, h1);
     }
 }
