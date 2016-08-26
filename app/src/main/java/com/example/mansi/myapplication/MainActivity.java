@@ -24,18 +24,25 @@ public class MainActivity extends AppCompatActivity {
     private int check = 1;
     private TextView question, number;
     private TextView warning, score;
-    private String disp;
-    private String quiz;
+    private int disp;
+    private int quiz;
+    private int qs=0;
+    private int h1 = 0;
+    private int a2 = 0;
+    private String okay;
+    private String n1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-
-        disp= getIntent().getStringExtra("cheat");
-        quiz= getIntent().getStringExtra("score");
-
+            Intent intent = getIntent();
+            quiz = intent.getIntExtra("score",0);
+//        disp= getIntent().getStringExtra("cheat");
+//        quiz= getIntent().getStringExtra("score");
+//        qs = Integer.parseInt(quiz);
         number = (TextView)findViewById(R.id.number);
         question = (TextView)findViewById(R.id.question);
         warning = (TextView)findViewById(R.id.warning);
@@ -46,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
 
         s = Integer.toString(num);
         number.setText(s);
+        String fscore = "Score: " + quiz;
+        score.setText(fscore);
         question.setText("Is this a Prime Number?");
         check = 1;
         int temp;
@@ -63,16 +72,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                     if(check==1){
+                        quiz += 1;
                         Toast.makeText(MainActivity.this,
                                 "Yayy!! You got it right", Toast.LENGTH_LONG).show();
                     }
                else
                 {
+                    quiz -= 1;
                     Toast.makeText(MainActivity.this,
                             "Oops!! Try again", Toast.LENGTH_LONG).show();
                 }
-
+//                okay = Integer.toString(qs);
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                intent.putExtra("score",quiz);
                 startActivity(intent);
                 finish();
 
@@ -85,16 +97,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(check==0){
+                    quiz += 1;
                     Toast.makeText(MainActivity.this,
                             "Yayy!! You got it right", Toast.LENGTH_LONG).show();
                 }
                  else
                 {
+                    quiz -= 1;
                     Toast.makeText(MainActivity.this,
                             "Oops!! Try again", Toast.LENGTH_LONG).show();
                 }
+//                okay = Integer.toString(qs);
 
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                intent.putExtra("score",quiz);
                 startActivity(intent);
                 finish();
 
@@ -102,15 +118,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         skip = (Button) findViewById(R.id.skip);
-        no.setOnClickListener(new View.OnClickListener() {
+        skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                     Toast.makeText(MainActivity.this,
                             "Question skipped!!", Toast.LENGTH_LONG).show();
 
+//                okay = Integer.toString(qs);
 
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                intent.putExtra("score",quiz);
                 startActivity(intent);
                 finish();
 
@@ -121,6 +139,11 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                h1 = 1;
+                if(a2==0)
+                {
+                    warning.setText("Hint Given");
+                }
                 Intent intent = new Intent(MainActivity.this, Hint.class);
                 startActivity(intent);
             }
@@ -130,9 +153,12 @@ public class MainActivity extends AppCompatActivity {
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                a2 = 1;
+                warning.setText("Answer Given");
+                Intent intent = new Intent(MainActivity.this, Cheat.class);
+//                n1 = Integer.toString(num);
+                intent.putExtra("number",num);
                 startActivity(intent);
-                finish();
             }
         });
     }

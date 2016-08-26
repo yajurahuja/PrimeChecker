@@ -1,3 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-8.1.0_f914d2483f6f8fed201d639a4a441087cc4a4840\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-8.1.0_c553b9e277acd9591842d3e7511a8e4a7a44acdc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.1.0_983a29ae53fd71f6377d4eba8fee55ce07861395\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f2d2962c0ecefaa35dadeebd7577f6d9124667ec">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_60a27e7d2cc5548ab1496534801c2fa846311619\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-8.1.0_2aa93c7cd29a545c42c21d372db2af37fb18ecb7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.1.0_8612bd0ffb55cecfad803bde4626d951e844238b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.1.0_52e7fe132105e1dc800efb4144daf34566c09a5a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_40716975353f92eb09ffa8101e76c0679a21d689\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-8.1.0_b26bfe54fc67894cf83bb29357260524a2cbf9aa\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_089701e8d9d935769dd4fe6758a1d901bd63748b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-8.1.0_13a8d769b901b43c44ebc3ec4fca6766767da2fd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\MANSI\AndroidStudioProjects\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_fa68d13e0eeadc9b95a9d467c74cfd64ec31335c\classes.dex" />
+    </item>
+
+</items>

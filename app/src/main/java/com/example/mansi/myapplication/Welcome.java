@@ -33,8 +33,8 @@ public class Welcome extends AppCompatActivity {
                 // This method will be executed once the timer is over
                 // Start your app main activity
                 Intent i = new Intent(Welcome.this, MainActivity.class);
-                i.putExtra("cheat","0");
-                i.putExtra("score","0");
+//                i.putExtra("cheat","0");
+                i.putExtra("score",0);
                 startActivity(i);
                 // close this activity
                 finish();

@@ -18,9 +18,9 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/hints"
+            android:background="@color/white"
             android:text="-> A prime number is a whole number greater than 1, whose only two whole-number factors are 1 and itself."
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
             android:layout_marginTop="95dp"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"/>
@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/hints1"
+            android:background="@color/white"
             android:text="-> If the number has mare than 2 unique divisors, its not a prime number."
             android:layout_below="@+id/hints"
             android:paddingLeft="40dp"
@@ -42,12 +43,14 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/hints2"
+            android:background="@color/white"
             android:text="-> By default all even numbers other than 2 are primes."
             android:layout_below="@+id/hints1"
             android:layout_alignStart="@+id/hints"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
-            android:layout_marginTop="60dp" />
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"/>
 
 
 

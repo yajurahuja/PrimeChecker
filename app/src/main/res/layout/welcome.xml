@@ -13,13 +13,7 @@
         android:layout_height="match_parent">
 
 
-             <pl.droidsonroids.gif.GifTextView
-                 android:id="@+id/gif"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/math"
-                 android:layout_centerVertical="true"
-                 android:layout_centerHorizontal="true" />
+
 
 
         <TextView
@@ -46,6 +40,16 @@
             android:id="@+id/we2"
             android:layout_below="@+id/we1"
             android:layout_centerHorizontal="true" />
+
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/math"
+            android:layout_below="@+id/we2"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+             />
 
         <TextView
             android:layout_width="wrap_content"
