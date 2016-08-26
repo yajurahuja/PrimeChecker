@@ -93,8 +93,13 @@ public class MainActivity extends AppCompatActivity {
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    if(check==1){
+                    if((check==1)&&(h1<5)){
                         quiz += 1;
+                        Toast.makeText(MainActivity.this,
+                                "Yayy!! You got it right", Toast.LENGTH_LONG).show();
+                    }
+                    else if(check==1)
+                    {
                         Toast.makeText(MainActivity.this,
                                 "Yayy!! You got it right", Toast.LENGTH_LONG).show();
                     }
@@ -118,8 +123,13 @@ public class MainActivity extends AppCompatActivity {
         no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(check==0){
+                if((check==0)&&(h1<5)){
                     quiz += 1;
+                    Toast.makeText(MainActivity.this,
+                            "Yayy!! You got it right", Toast.LENGTH_LONG).show();
+                }
+                else if(check==0)
+                {
                     Toast.makeText(MainActivity.this,
                             "Yayy!! You got it right", Toast.LENGTH_LONG).show();
                 }

@@ -10,15 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/green_A100">
+        android:background="@color/green_50">
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
             android:id="@+id/numb"
+            android:textSize="60dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textColor="@color/green_A700"
             android:layout_marginTop="134dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
@@ -27,6 +32,8 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
+            android:textSize="30dp"
+            android:textStyle="italic"
             android:id="@+id/ans"
             android:layout_below="@+id/numb"
             android:layout_centerHorizontal="true"
